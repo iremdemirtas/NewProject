@@ -1,0 +1,465 @@
+body {
+    background-image: url("until dawn arka plan.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    font-weight: 700;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: rgba(18, 18, 18, 0.8); 
+    backdrop-filter: blur(10px); 
+    color: white;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #BAE6FD; 
+}
+
+.butterfly-icon {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 4px; 
+    transition: transform 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #588aa4;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1); 
+}
+
+.steam { background-color: #171a21; border: 1px solid #66c0f4; }
+.ps { background-color: #031b46da; border: 1px solid #02233f; }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.anabolum {
+    width: 90%;
+    max-width: 1100px;
+    padding: 40px;
+    box-sizing: content-box; /**/
+    background: rgba(10, 18, 32, 0.6); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    align-self: flex-start;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+.altanabolum {
+    width: 100%;
+    max-width: 1100px;
+    padding: 40px;
+    background: rgba(14, 24, 40, 0.5);
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0;
+}
+
+.altanabolum ul {
+    padding-left: 18px;   
+    margin-top: 10;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.altanasagbolum{
+    padding-left: 20px;
+}
+
+.ust-kisim {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.icerik {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.baslik {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #8ecae6;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    margin-bottom: 40px;
+
+}
+
+.yazi {
+    width: 50%;
+}
+
+.yazi p {
+    font-size: 18px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.video {
+    width: 50%;
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+    pointer-events: none; 
+    transform: scale(1.2);
+}
+
+.hikaye p {
+    font-size: 18px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.kart-konteynir {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.kart {
+    text-decoration: none;
+    color: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    padding: 20px;
+}
+
+.kart-hikaye {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)), url('story image.jpeg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.kart-karakterler {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7),rgba(15, 23, 42, 0.7)), url('characters.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.kart-mini-test {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('untilDawnbutterfly.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.kart:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-10px);
+    border-color: #3b82f6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.kart h3 {
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    font-size: 22px;
+    color: #60a5fa;
+}
+
+.kart p {
+    margin: 0;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.karakter-listesi {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.karakter-karti {
+    max-width: 1050px;
+    display: flex; 
+    align-items: center;
+    gap: 30px;
+    background: rgba(15, 23, 42, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    scroll-margin-top: 150px;
+    scroll-behavior: smooth;
+}
+
+.karakter-karti:nth-child(even) {
+    flex-direction: row-reverse; 
+}
+
+.karakter-resim-alani {
+    width: 40%; 
+}
+
+.karakter-resim-alani img {
+    flex-shrink: 0;
+    width: 100%; 
+    height:360px;
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.karakter-bilgi-alani {
+    width: 60%;
+}
+
+.karakter-bilgi-alani h2 {
+    color: #22D3EE;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.karakter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    list-style-type: none; 
+    padding: 0;
+}
+
+.karakter-grid li {
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.karakter-grid img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.story{
+  width:100%;
+  display:flex;
+  align-items:flex-start;
+  gap:50px;
+  margin-bottom:40px;
+}
+
+.story p{
+    text-align: justify;
+    width:70%;
+    margin:0;
+    line-height:1.6;
+}
+
+.story img{
+    width:25%;
+    height:auto;
+    display:block;
+}
+
+.question-block {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.question-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.answer-label {
+    display: block;
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.answer-label input[type="radio"] {
+    display: none; 
+}
+
+.answer-label:has(input[type="radio"]:checked) {
+    background-color: #005f5f;
+    border: 1px solid rgb(150, 200, 220);
+}
+
+#character-description {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#character-image {
+    width: 250px;
+    border-radius: 15px;
+}
+
+#character-info {
+    flex: 1;
+    text-align: left;
+}
+
+.test-icerik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.test-icerik img {
+    width: 100%;
+    max-width: 600px;   
+    border-radius: 10px;
+}
+.quiz-text{
+    width: 60%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: large;
+
+}
+
+@media (max-width: 768px) {
+
+    .icerik {
+        flex-direction: column;
+    }
+
+    .yazi, .video {
+        width: 100%;
+    }
+
+    .altanabolum {
+        grid-template-columns: 1fr;
+    }
+
+    .story {
+        flex-direction: column;
+    }
+
+    .story p, .story img {
+        width: 100%;
+    }
+
+    .kart-konteynir {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
