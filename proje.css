@@ -454,12 +454,20 @@ nav ul li a:hover {
     }
 
     .kart-konteynir {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+        width: 100%;
+        padding: 0 10px;
     }
 
     .nav-container {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
+    }
+
+    .nav-container a {
+        font-size: 14px;
     }
 
 }
