@@ -435,41 +435,91 @@ nav ul li a:hover {
 
 }
 
-/* TABLET */
 @media (max-width: 992px) {
 
-    .karakter-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .baslik {
+        font-size: 34px;
     }
 
     .icerik {
         flex-direction: column;
+        gap: 20px;
     }
 
     .yazi, .video {
         width: 100%;
     }
 
+    .yazi p {
+        font-size: 16px;
+    }
+
+
     .video iframe {
-        transform: scale(1);
+        height: 200px;
     }
 
     .altanabolum {
+        grid-template-columns: 1fr !important;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .altanasolbolum,
+    .altanasagbolum {
+        padding: 0;
+    }
+
+    .altanabolum ul {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .altanabolum p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+     .kart-konteynir {
         grid-template-columns: 1fr;
     }
+
+    .karakter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .test-icerik {
+        gap: 15px;
+    }
+
+    .quiz-text {
+        width: 80%;
+    }
+
+    #character-image {
+        width: 250px;
+    }
+
+     #character-description {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #character-info {
+        text-align: left;
+    }
 }
-
-
+    
 @media (max-width: 768px) {
 
-    /* ❌ ARKA PLANI KALDIR */
     body {
         background-image: none !important;
         background-color: #0a1220;
-        align-items: flex-start !important;
+        align-items: flex-start;
     }
 
-    /* ✅ NAVBAR DÜZELT */
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -501,7 +551,70 @@ nav ul li a:hover {
     }
 
     .baslik {
-        font-size: 28px;
+        font-size: 24px;
+        line-height: 1.3;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .icerik {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .yazi, .video {
+        width: 100%;
+    }
+
+    .yazi p {
+        font-size: 16px;
+    }
+
+    .video iframe {
+        height: 200px;
+    }
+
+    .kart-konteynir {
+        grid-template-columns: 1fr;
+    }
+
+    .altanabolum {
+        grid-template-columns: 1fr !important;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .altanasolbolum,
+    .altanasagbolum {
+        padding: 0;
+    }
+
+    .altanabolum ul {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .altanabolum p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .story {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .story img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .story p {
+        width: 100%;
+        text-align: justify;
+        font-size: 15px;
     }
 
     .karakter-grid {
@@ -537,4 +650,59 @@ nav ul li a:hover {
     .karakter-bilgi-alani h2 {
         font-size: 24px;
     }
+
+    .quiz-text {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .test-icerik {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .orta-resim img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .question-text {
+        font-size: 18px;
+    }
+
+    .answer-label {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #character-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #character-image {
+        width: 180px !important;
+        height: auto;
+    }
+
+    #character-info {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    #result-container {
+        padding: 15px;
+        text-align: center;
+    }
+
+    #result-container h2,
+    #result-container h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
 }
