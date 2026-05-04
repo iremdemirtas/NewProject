@@ -5,14 +5,14 @@ let scores = {
 };
 
 const characterImages = {
-    Sam: "sam test.jpg", 
-    Mike: "mike test.jpg",
-    Ashley: "ashley test.jpg",
-    Chris: "chris test.jpg",
-    Emily: "emily test.jpg",
-    Matt: "matt test.jpg",
-    Jessica: "jessica test.jpg",
-    Josh: "josh test.jpg"
+    Sam: "images/sam test.jpg", 
+    Mike: "images/mike test.jpg",
+    Ashley: "images/ashley test.jpg",
+    Chris: "images/chris test.jpg",
+    Emily: "images/emily test.jpg",
+    Matt: "images/matt test.jpg",
+    Jessica: "images/jessica test.jpg",
+    Josh: "images/josh test.jpg"
 };
 
 const characterDescriptions = {

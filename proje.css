@@ -1,5 +1,5 @@
 body {
-    background-image: url("until dawn arka plan.jpeg");
+    background-image: url("images/until dawn arka plan.jpeg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -92,11 +92,21 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .steam { background-color: #171a21; border: 1px solid #66c0f4; }
 .ps { background-color: #031b46da; border: 1px solid #02233f; }
+
+.store-buttons .steam:hover {
+    background-color: #171a21 !important; 
+    border-color: #66c0f4 !important;
+}
+
+.store-buttons .ps:hover {
+    background-color: #031b46da !important;
+    border-color: #02233f !important;
+}
 
 .overlay {
     position: fixed;
@@ -236,21 +246,21 @@ nav ul li a:hover {
 }
 
 .kart-karakterler {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.7),rgba(15, 23, 42, 0.7)), url('characters.jpeg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7),rgba(15, 23, 42, 0.7)), url('images/characters.jpeg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
 }
 
 .kart-hikaye {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)), url('story image.jpeg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)), url('images/story image.jpeg');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
 }
 
 .kart-mini-test {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('Until Dawn butterfly.jpg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('images/Until Dawn butterfly.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
