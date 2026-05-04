@@ -10,10 +10,17 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
 }
+
 p{
     text-align: justify;
 }
+
+h2{
+    font-weight: 700;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -22,7 +29,7 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    background-color: rgba(18, 18, 18, 0.8);
+    background-color: rgba(18, 18, 18, 0.8); 
     backdrop-filter: blur(10px); 
     color: white;
     z-index: 1000;
@@ -85,7 +92,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .steam { background-color: #171a21; border: 1px solid #66c0f4; }
@@ -102,11 +109,12 @@ nav ul li a:hover {
 }
 
 .anabolum {
-    width: 100%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1100px;
     padding: 40px;
+    box-sizing: content-box; /**/
     background: rgba(10, 18, 32, 0.6); 
-    backdrop-filter: blur(10px); /* Cam efekti */
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
@@ -118,28 +126,31 @@ nav ul li a:hover {
 
 .altanabolum {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     padding: 40px;
     background: rgba(14, 24, 40, 0.5);
-    backdrop-filter: blur(10px); /* Cam efekti */
+    backdrop-filter: blur(10px); 
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 0;
 }
+
 .altanabolum ul {
     padding-left: 18px;   
     margin-top: 10;
     text-align: left;
     margin-bottom: 6px;
 }
+
 .altanasagbolum{
     padding-left: 20px;
 }
+
 .ust-kisim {
     text-align: center;
     margin-bottom: 50px;
@@ -156,11 +167,13 @@ nav ul li a:hover {
 .baslik {
     text-align: center;
     font-size: 45px;
+    font-weight: 700;
     color: #8ecae6;
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     letter-spacing: 2px;
     margin-top: 3px;
     margin-bottom: 40px;
+
 }
 
 .yazi {
@@ -182,7 +195,7 @@ nav ul li a:hover {
 
 .video iframe {
     width: 100%;
-    height: 315px; 
+    height: 315px;
     pointer-events: none; 
     transform: scale(1.2);
 }
@@ -195,25 +208,31 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-.kart-konteynir {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+.row {
+    margin: 0 !important;
+}
+
+.col-md-4 {
+    padding: 0 10px;
 }
 
 .kart {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
     text-decoration: none;
     color: inherit;
     background: rgba(255, 255, 255, 0.05);
-    border: none;
     border-radius: 15px;
-    transition: all 0.3s ease;
     overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    height: 150px;
     padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.kart-icerik {
+    width: 100%;
 }
 
 .kart-karakterler {
@@ -227,11 +246,11 @@ nav ul li a:hover {
     background-image: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)), url('story image.jpeg');
     background-size: cover;
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 .kart-mini-test {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('untildawnbutterfly.jpg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('Until Dawn butterfly.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -240,7 +259,7 @@ nav ul li a:hover {
 .kart:hover {
     background: rgba(255, 255, 255, 0.15);
     transform: translateY(-10px);
-    border-color: #3b82f6; 
+    border-color: #3b82f6;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -257,7 +276,7 @@ nav ul li a:hover {
 }
 
 .karakter-listesi {
-    max-width: 1000px;
+    max-width: 950px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -266,6 +285,7 @@ nav ul li a:hover {
 }
 
 .karakter-karti {
+    max-width: 950px;
     display: flex; 
     align-items: center;
     gap: 30px;
@@ -277,9 +297,8 @@ nav ul li a:hover {
     scroll-behavior: smooth;
 }
 
-
 .karakter-karti:nth-child(even) {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; 
 }
 
 .karakter-resim-alani {
@@ -287,8 +306,9 @@ nav ul li a:hover {
 }
 
 .karakter-resim-alani img {
+    flex-shrink: 0;
     width: 100%; 
-    height:360;
+    height:360px;
     border-radius: 15px; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
 }
@@ -302,25 +322,26 @@ nav ul li a:hover {
     font-size: 32px;
     margin-top: 0;
 }
+
 .karakter-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 20px;
-  list-style-type: none; 
-  padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    list-style-type: none; 
+    padding: 0;
 }
 
 .karakter-grid li {
-  padding: 10px;
-  text-align: center;
-  border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
 }
 
 .karakter-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .story{
@@ -331,46 +352,51 @@ nav ul li a:hover {
   margin-bottom:40px;
 }
 
-
 .story p{
     text-align: justify;
-  width:70%;
-  margin:0;
-  line-height:1.6;
+    width:70%;
+    margin:0;
+    line-height:1.6;
 }
 
 .story img{
-  width:25%;
-  height:auto;
-  display:block;
+    width:25%;
+    height:auto;
+    display:block;
 }
 
 .question-block {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #444;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.question-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #cbd5e1;
+    margin-bottom: 15px;
 }
 
 .answer-label {
-  display: block;
-  background-color: #222;
-  color: white;
-  padding: 12px;
-  margin: 8px 0;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 1px solid transparent;
-  transition: 0.2s;
+    display: block;
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.2s;
 }
 
-
 .answer-label input[type="radio"] {
-  display: none; 
+    display: none; 
 }
 
 .answer-label:has(input[type="radio"]:checked) {
-  background-color: #005f5f;
-  border: 1px solid rgb(150, 200, 220);
+    background-color: #005f5f;
+    border: 1px solid rgb(150, 200, 220);
 }
 
 #character-description {
